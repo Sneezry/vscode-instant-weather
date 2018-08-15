@@ -1,0 +1,64 @@
+{
+  "name": "vscode-instant-weather",
+  "displayName": "Instant Weather",
+  "description": "Shows instant weather in specific location",
+  "version": "0.1.0",
+  "publisher": "sneezry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sneezry/vscode-instant-weather"
+  },
+  "bugs": {
+    "url": "https://github.com/Sneezry/vscode-instant-weather/issues"
+  },
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "instatntweather.updateConfiguration",
+        "title": "Configurate Location and API Key",
+        "category": "Instant Weather"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Instant Weather Configuration",
+        "properties": {
+          "InstantWeather.location": {
+            "type": "string"
+          },
+          "InstantWeather.key": {
+            "type": "string"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.40",
+    "@types/request": "^2.47.1",
+    "@types/request-promise": "^4.1.42",
+    "typescript": "^2.1.4",
+    "vscode": "^1.1.17"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
