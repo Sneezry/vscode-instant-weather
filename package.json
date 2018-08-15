@@ -4,6 +4,7 @@
   "description": "Shows instant weather in specific location",
   "version": "0.1.0",
   "publisher": "sneezry",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Sneezry/vscode-instant-weather"
