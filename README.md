@@ -6,7 +6,7 @@ Shows instant weather information for specific city in Visual Studio Code status
 
 ## Installation
 
-Install from [Visual Studio Code Markplace](https://marketplace.visualstudio.com/items?itemName=sneezry.vscode-instant-weather)
+Install from [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sneezry.vscode-instant-weather)
 
 ## Build from Source Code
 
