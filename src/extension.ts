@@ -57,7 +57,7 @@ let weatherInfo:WeatherInfo|null = null;
 let location = workspace.getConfiguration('InstantWeather').get<string>('location');
 let appKey = workspace.getConfiguration('InstantWeather').get<string>('key');
 
-const statusBar = window.createStatusBarItem(StatusBarAlignment.Right);
+const statusBar = window.createStatusBarItem(StatusBarAlignment.Right, -10);
 
 export function activate(context: ExtensionContext) {
   statusBar.command = 'instatntweather.switchWeatherType';
@@ -72,7 +72,7 @@ export function activate(context: ExtensionContext) {
   }));
 
   if (!location || !appKey) {
-    statusBar.text = '<Set location and API Key>';
+    statusBar.text = '🌈 Set location and API Key';
     statusBar.tooltip = 'Instant Weather';
     statusBar.show();
   }
@@ -130,7 +130,7 @@ async function updateConfiguration() {
   updateAppKey(_appKey);
 
   if (!location || !appKey) {
-    statusBar.text = '<Set location and API Key>';
+    statusBar.text = '🌈 Set location and API Key';
     statusBar.tooltip = 'Instant Weather';
     statusBar.show();
   } else {
@@ -154,10 +154,14 @@ async function updateWeatherInfo() {
       weatherInfo = info;
       updateStatus();
     } else {
-      
+      weatherInfo = null;
+      statusBar.text = '🌏 Weather Unavailable';
+      statusBar.tooltip = 'Instant Weather';
+      statusBar.show();
     }
   } catch(err) {
-    statusBar.text = 'Weather Unavailable';
+    weatherInfo = null;
+    statusBar.text = '🌏 Weather Unavailable';
     statusBar.tooltip = 'Instant Weather';
     statusBar.show();
   }

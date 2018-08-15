@@ -2,6 +2,8 @@
 
 Shows instant weather information for specific city in Visual Studio Code status bar.
 
+![](screenshot.png)
+
 ## Prerequisites
 
 Instant Weather gets weather information from OpenWeatherMap. An API key for OpenWeatherMap is required. OpenWeatherMap provides free API key, and you can get it very easy from [openweathermap.org](https://openweathermap.org/).
@@ -10,7 +12,7 @@ Instant Weather gets weather information from OpenWeatherMap. An API key for Ope
 
 ## Set Location City and API Key
 
-When you first run, the extension needs to know your location and OpenWeatherMap API key. You can click `<Set location and API Key>` button on status bar, or press `F1` (or `Ctrl` + `Shift` + `P` on Windows and Linux, `Command` + `Shift` + `P` on macOS) to open command palette, and execute `Instant Weather: Configurate Location and API Key` to configurate location city and API key.
+When you first run, the extension needs to know your location and OpenWeatherMap API key. You can click `🌈 Set location and API Key` button on status bar, or press `F1` (or `Ctrl` + `Shift` + `P` on Windows and Linux, `Command` + `Shift` + `P` on macOS) to open command palette, and execute `Instant Weather: Configurate Location and API Key` to configurate location city and API key.
 
 ## Location City
 
