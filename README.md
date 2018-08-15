@@ -2,7 +2,7 @@
 
 Shows instant weather information for specific city in Visual Studio Code status bar.
 
-![](screenshot.png)
+![](https://raw.githubusercontent.com/Sneezry/vscode-instant-weather/master/screenshot.png)
 
 ## Prerequisites
 
