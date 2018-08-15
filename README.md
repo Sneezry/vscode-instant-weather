@@ -4,6 +4,20 @@ Shows instant weather information for specific city in Visual Studio Code status
 
 ![](https://raw.githubusercontent.com/Sneezry/vscode-instant-weather/master/screenshot.png)
 
+## Installation
+
+Install from [Visual Studio Code Markplace](https://marketplace.visualstudio.com/items?itemName=sneezry.vscode-instant-weather)
+
+## Build from Source Code
+
+```bash
+git clone https://github.com/Sneezry/vscode-instant-weather.git
+cd vscode-instant-weather
+npm i
+npm i vsce -g
+vsce package .
+```
+
 ## Prerequisites
 
 Instant Weather gets weather information from OpenWeatherMap. An API key for OpenWeatherMap is required. OpenWeatherMap provides free API key, and you can get it very easy from [openweathermap.org](https://openweathermap.org/).
