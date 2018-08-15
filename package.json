@@ -2,7 +2,7 @@
   "name": "vscode-instant-weather",
   "displayName": "Instant Weather",
   "description": "Shows instant weather in specific location",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "sneezry",
   "icon": "icon.png",
   "repository": {
