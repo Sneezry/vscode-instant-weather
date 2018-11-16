@@ -5,7 +5,7 @@ import * as request from 'request-promise';
 
 const ICONS = {
   '01d': '☀️',
-  '01n': '☀️',
+  '01n': '🌙',
   '02d': '⛅',
   '02n': '⛅',
   '03d': '☁️',
