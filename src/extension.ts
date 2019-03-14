@@ -172,7 +172,7 @@ function updateStatus(): void {
 
   switch(weatherType) {
     case WeatherType.Temperature: {
-      text = weatherInfo.main.temp + '℃';
+      text = Math.round(weatherInfo.main.temp) + '℃/' + Math.round(weatherInfo.main.temp * 1.8 + 32) + '℉';
       break;
     }
     case WeatherType.Humidity: {
