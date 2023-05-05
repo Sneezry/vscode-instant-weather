@@ -56,6 +56,7 @@ let weatherType = WeatherType.Temperature;
 let weatherInfo:WeatherInfo|null = null;
 let location = workspace.getConfiguration('InstantWeather').get<string>('location');
 let appKey = workspace.getConfiguration('InstantWeather').get<string>('key');
+let updateInterval = workspace.getConfiguration('InstantWeather').get<string>('interval');
 
 const statusBar = window.createStatusBarItem(StatusBarAlignment.Right, -10);
 
@@ -78,7 +79,7 @@ export function activate(context: ExtensionContext) {
   }
 
   updateWeatherInfo();
-  setInterval(updateWeatherInfo, 60 * 1000);
+  setInterval(updateWeatherInfo, updateInterval * 1000);
 }
 
 function getDirection(deg: number) {
