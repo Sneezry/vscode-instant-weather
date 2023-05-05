@@ -39,6 +39,11 @@
           },
           "InstantWeather.key": {
             "type": "string"
+          },
+          "InstantWeather.interval": {
+            "type": "integer",
+            "description": "update interval in seconds",
+            "default": 60
           }
         }
       }
